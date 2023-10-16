@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Kintamieji", "01 Kintami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji", "Kintamieji\Kintamieji.csproj", "{A26CFED6-34AA-4982-BAFD-379A641A45BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Isvedimas", "02 Isvedimas", "{41BC6AA2-4AB1-4263-AA1F-B7EB8E0AF7E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Isvedimas", "Isvedimas\Isvedimas.csproj", "{C9265B65-83D2-47CF-99F9-F40997014842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{A26CFED6-34AA-4982-BAFD-379A641A45BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26CFED6-34AA-4982-BAFD-379A641A45BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26CFED6-34AA-4982-BAFD-379A641A45BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9265B65-83D2-47CF-99F9-F40997014842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9265B65-83D2-47CF-99F9-F40997014842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9265B65-83D2-47CF-99F9-F40997014842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9265B65-83D2-47CF-99F9-F40997014842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A26CFED6-34AA-4982-BAFD-379A641A45BA} = {0F7AD788-8548-4C6F-BA65-EDA2FDF36E6B}
+		{C9265B65-83D2-47CF-99F9-F40997014842} = {41BC6AA2-4AB1-4263-AA1F-B7EB8E0AF7E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7ABFD4E7-4F0A-4F28-A7C4-2D9E18798766}

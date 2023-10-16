@@ -20,7 +20,6 @@ namespace Kintamieji
             int course = 2;
             string study_name = "Neurobiology";
             double credit_done = 90;
-
         }
     }
 }
