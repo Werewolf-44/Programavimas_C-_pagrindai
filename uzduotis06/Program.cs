@@ -30,6 +30,17 @@ namespace uzduotis06
             int tens = num / 10;
             int ones = num % 10;
             Console.WriteLine($"Sveikasis dviženklis skaičius yra {num}. Pirmas skaičius yra {tens}, antras skaičius yra {ones}. Jų sandauga yra " + tens * ones);
+
+            int[] myNum = { 10, 20, 30, 40 };
+
+            for (int i = 0; i < myNum.Length; i++)
+            {
+                Console.WriteLine(myNum[i]);
+            }
+            foreach (int i in myNum)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
