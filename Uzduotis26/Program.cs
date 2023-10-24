@@ -17,23 +17,20 @@ namespace Uzduotis26
              * kiek skaičių yra žemesni už vidurkį;
              * lyginių skaičių sumą;
              */
-            List<double> numbers = new List<double>();
-            numbers.Add(1);
-            numbers.Add(2);
-            numbers.Add(3);
-            numbers.Add(4);
-            numbers.Add(5);
-            numbers.Add(6);
-            numbers.Add(7);
-            numbers.Add(8);
-            numbers.Add(9);
-            numbers.Add(10);
-            double min_value = numbers.Min();
-            double max_value = numbers.Max();
-            double average = numbers.Average();
+            List<int> numbers = new List<int>();
+            Random random = new Random();
+            for (int i = 0; i < 100; i++)
+            {
+                int randomNumber = random.Next(100);
+                numbers.Add(randomNumber);
+            }
+            int min_value = numbers.Min();
+            int max_value = numbers.Max();
+            double average_before = numbers.Average();
+            double average_after = Math.Round(average_before, 2);
             double counter_less_avg = 0;
             double counter_even = 0;
-            foreach (double number in numbers)
+            foreach (int number in numbers)
             {
                 if (number < numbers.Average())
                 {
@@ -46,7 +43,7 @@ namespace Uzduotis26
             }
             Console.WriteLine($"Lowests numbers is: {min_value}");
             Console.WriteLine($"Highest numbers is: {max_value}");
-            Console.WriteLine($"Average is: {numbers.Average()}");
+            Console.WriteLine($"Average is: {average_after}");
             Console.WriteLine($"How many numbers are lower than average: {counter_less_avg}");
             Console.WriteLine($"Total sum of even numbers: {counter_even}");
         }

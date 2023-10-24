@@ -21,6 +21,8 @@ namespace Uzduotis07
             Console.WriteLine("Write down any symbol:");
             var symbol = Console.ReadLine();
             Console.WriteLine(symbol + symbol + symbol);
+            Console.WriteLine(symbol + symbol + symbol);
+            Console.WriteLine(symbol + symbol + symbol);
 
             //Liepkite vartotojui įvesti bet kokį skaičių. Išveskite į ekraną šio skaičiaus kvadratą.
             Console.WriteLine("Write down any number:");
@@ -29,12 +31,12 @@ namespace Uzduotis07
 
             //Liepkite vartotojui įvesti tris skaičius. Išveskite visų šių skaičių sumą, nurodant atliekamus veiksmus ir šių skaičių reikšmes ekrane.
             Console.WriteLine("Write down 3 numbers (press Enter after each number):");
-            double[] list = new double[3];
-            for (int i = 0; i < list.Length; i++)
+            double[] array = new double[3];
+            for (int i = 0; i < array.Length; i++)
             {
-                list[i] = Convert.ToDouble(Console.ReadLine());
+                array[i] = Convert.ToDouble(Console.ReadLine());
             }
-            Console.WriteLine("Total sum of these three numbers is: " + list[0] + " + " + list[1] + " + " + list[2] + " = " + list.Sum());
+            Console.WriteLine("Total sum of these three numbers is: " + array[0] + " + " + array[1] + " + " + array[2] + " = " + array.Sum());
         }
     }
 }

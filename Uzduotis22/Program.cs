@@ -30,19 +30,25 @@ namespace Uzduotis22
             Console.WriteLine("The average temperature is: " + temperaturos.Average());
             int counter_high = 0;
             int counter_low = 0;
+            int counter_equal = 0;
             for(int i = 0; i < temperaturos.Length; i++)
             {
                 if(temperaturos[i] < temperaturos.Average())
                 {
                     counter_low++;
                 }
-                else
+                else if (temperaturos[i] >  temperaturos.Average())
                 {
                     counter_high++;
+                }
+                else
+                {
+                    counter_equal++;
                 }
             }
             Console.WriteLine("The temperatures that are below average: " + counter_low);
             Console.WriteLine("The temperatures that are above average: " + counter_high);
+            Console.WriteLine("The temperatures that are equal to average: " + counter_equal);
 
             /*Susikurkite studentų pažymių masyvą. Raskite:
              * geriausią pažymį;

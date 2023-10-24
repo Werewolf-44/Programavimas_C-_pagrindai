@@ -22,7 +22,7 @@ namespace Uzduotis21
             Console.WriteLine($"First grade is {grades[0]} and the last grade is {grades[4]}");
             //skirtą mašinų markėms saugoti.
             string[] cars = { "Hyundai", "Audi", "BMW", "Toyota", "Mazda" };
-            Console.WriteLine($"First car is {cars[0]} and the last car is {cars[4]}");
+            Console.WriteLine($"First car is {cars[0]} and the last car is {cars.Last()}");
         }
     }
 }
