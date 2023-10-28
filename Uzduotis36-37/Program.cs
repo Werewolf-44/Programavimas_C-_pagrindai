@@ -15,10 +15,10 @@ namespace Uzduotis36_37
          */
         class Student
         {
-            public string name;
-            public string surname;
-            public int age;
-            public int school_year;
+            private string name;
+            private string surname;
+            private int age;
+            private int school_year;
             public List<int> grades = new List<int>();
 
             public Student(string name, string surname, int age, int school_year, List<int> grades)
@@ -35,9 +35,8 @@ namespace Uzduotis36_37
                 Console.WriteLine($"Information about the student! Meet {name} {surname}, a {age} year old, {school_year} year student with grades: ");
                 foreach (int grade in grades)
                 {
-                    Console.Write(grade + " ");
+                    Console.WriteLine(grade + " ");
                 }
-                Console.WriteLine("\n");
             }
 
             /* Klasės viduje sukurti void tipo metodą, kuris išvestų į ekraną už, kiek metų  mokinys baigs mokyklą, jei atsakymas 0 – tuomet išvesti 
@@ -48,7 +47,7 @@ namespace Uzduotis36_37
                 int yearsLeft = 12 - school_year;
                 if (yearsLeft > 0)
                 {
-                    Console.Write($"{name} {surname} will finish school in {yearsLeft} years.");
+                    Console.WriteLine($"{name} {surname} will finish school in {yearsLeft} years.");
                     Console.WriteLine("\n");
                 }
                 else
